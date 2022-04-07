@@ -1,0 +1,612 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*BODY----------------------------------------------------------------------------*/
+body {
+    background-image: url('../background/r2\(1\).jpg');
+    margin: 0%;
+    font-family: 'poppins';
+}
+
+
+h3 {
+    color: rgb(14, 14, 15);
+}
+
+/*BODY--------------------------------------------------------------------------------*/
+
+/*FOOTER------------------------------------------------------------*/
+
+.footer {
+    display: grid;
+    background-color: rgb(5, 5, 5);
+    grid-template-areas: "todoslosderechos  seguinos  redes";
+    align-items: center;
+    height: 150px;
+    margin-top: 30px;
+}
+
+.footer .todoslosderechos {
+    grid-area: todoslosderechos;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+
+.footer .seguinos {
+    display: flex;
+    justify-content: center;
+    grid-area: seguinos;
+    color: white;
+}
+
+.footer .redes {
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: redes;
+    font-size: 30px;
+    color: white;
+    align-items: center;
+
+}
+
+.footer .link {
+    color: aliceblue;
+
+}
+
+/*FOOTER-----------------------------------------------------------------------------------*/
+
+
+
+/*productos-----------------------------------------*/
+.partespc-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.partespcgamer{
+    height: 400px;
+    width: 200px;
+    border-style: groove;
+    border-radius: 5px;
+    margin-top: 30px;
+
+
+}
+
+.partespcgamer__img {
+    height: 50%;
+    border-radius: 5px;
+}
+
+.partespcgamer:hover {
+    transform: translateY(-15px);
+    box-shadow: #24303c;
+    border-style: groove;
+    border-color: #a1a1a1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PC ARMADAS CAJAS COMP-------------------------------------------------------*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.pcarmadas {
+    width: 250px;
+    height: 500px;
+    border-style: groove;
+    border-radius: 20px;
+    border-color: black;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pcarmadas__img {
+    border-radius: 20px;
+}
+
+.pcarmadas__texto {
+    font-family: 'poppins';
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+margin: 10px;
+}
+
+/*PC ARMADAS COPM-------------------------------------------------------------------*/
+
+
+.botonv {
+    display: inline-block;
+    padding: 12px 20px;
+    background: rgb(85, 82, 82);
+    border-radius: 10px;
+    color: aliceblue;
+    align-items: center;
+}
+
+
+
+
+
+/*FORMULARIO---------------------------------------------------------------------------*/
+
+
+.form-register {
+    justify-content: center;
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    margin-top: 20px;
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 95%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0px;
+    font-size: 16px;
+}
+
+/*formulario--------------------------------------------------------------------------*/
+
+/*PAGINA SERVICIOS------------------------------------------------------------------------*/
+.servicios-contenedor {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+}
+
+.armadodepc {
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    margin: 20px;
+}
+
+.armadodepc__img {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.armadodepc__texto {
+    font-family: 'poppins';
+    font-size: 15px;
+}
+
+.reparaciondepc {
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    margin: 20px;
+}
+
+.reparaciondepc__img {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.reparaciondepc__texto {
+    font-family: 'poppins';
+    font-size: 15px;
+}
+
+.armadodepc:hover {
+    transform: translateY(-15px);
+    box-shadow: #24303c;
+    border-style: groove;
+    border-color: #a1a1a1;
+}
+
+.reparaciondepc:hover {
+    transform: translateY(-15px);
+    box-shadow: #24303c;
+    border-style: groove;
+    border-color: #a1a1a1;
+}
+
+#servicios-titulo {
+    color: rgb(14, 13, 13);
+    font-size: 40px;
+    font-family: 'roboto';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+/*PAGINA SERVICIOS---------------------------------------------------------------------------*/
+.pcarmadas:hover {
+    transform: translateY(-15px);
+    box-shadow: #24303c;
+    border-style: groove;
+    border-color: #a1a1a1;
+
+}
+
+.productos {
+    height: 400px;
+    width: 200px;
+    border-style: groove;
+    border-radius: 5px;
+    margin-top: 30px;
+
+}
+
+.productos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.productos__img {
+    height: 50%;
+    border-radius: 5px;
+}
+
+.productos:hover {
+    transform: translateY(-15px);
+    box-shadow: #24303c;
+    border-style: groove;
+    border-color: #a1a1a1;
+
+}
+
+.logo-img {
+    height: 80px;
+    width: 100px;
+    margin: 3px;
+}
+
+h1 {
+    color: #0d0d0e;
+}
+
+
+
+
+
+
+
+
+
+.navbar {
+    background-color: rgb(19, 20, 75);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    grid-template-rows: 40px 40px 40px 40px;
+    padding: 10px;
+}
+
+.navbar .logo {
+    height: 80px;
+    width: 80px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.navbar .menu {
+    grid-column: 2/8;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    align-items: end;
+    grid-row: 3/3;
+}
+
+.navbar .todopc {
+    color: white;
+    grid-column: 1/2;
+    font-size: 15px;
+    margin-top: 0%;
+    grid-row: 3/5;
+}
+
+.navbar .menu-bar {
+    display: none
+}
+
+.navbar .shop {
+    grid-column: 8/9;
+    justify-items: end;
+    margin-top: 50px;
+    color: white;
+    grid-row: 3/3;
+
+}
+
+.navbar .menu li {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar .menu a {
+    color: rgb(245, 240, 240);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+
+
+/*vista movil media*/
+
+@media (min-width:320px) and (max-width:600px){
+
+    .navbar .menu{
+        display: none;
+    }
+    .navbar .shop{
+        display: none;
+    }
+    .navbar .menu-bar {
+        display: block;
+        grid-column: 8/9;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+    }
+
+
+
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 50px 50px 50px;
+    }
+    .footer .todoslosderechos {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 9px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .footer .seguinos {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 10px;
+        grid-column: 3/4;
+        align-self: start;
+        margin: 20px;
+
+    }
+    
+    .footer .redes {
+        font-size: 22px;
+        color: white;
+        align-items: center;
+        grid-row: 2/3;
+        align-self: end;
+        margin-top: 20px;
+    }
+
+    .form-register {
+        justify-content: center;
+        width: 200px;
+        background: #24303c;
+        padding: 30px;
+        margin: auto;
+        border-radius: 4px;
+        font-family: 'calibri';
+        color: white;
+        box-shadow: 7px 13px 37px #000;
+        margin-top: 20px;
+    }
+    .productos {
+        height: 300px;
+        width: 200px;
+        border-style: groove;
+        border-radius: 5px;
+        margin-top: 30px;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+    
+    }
+    .productos-contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+
+}
+
+/*vista tableta*/
+
+@media (min-width:601px) and (max-width:800px){
+    .navbar .menu {
+        grid-column: 2/8;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        align-items: end;
+        grid-row: 2/4;
+    }
+    .navbar .menu li {
+        list-style: none;
+        color: white;
+        font-size: 15px;
+        margin: 5px;
+    } 
+    .navbar .todopc {
+        color: white;
+        grid-column: 1/2;
+        font-size: 10px;
+        margin-top: 0%;
+        margin: 7px;
+        grid-row: 3/5;
+        align-self: center;
+    }
+    .navbar .logo {
+        height: 75px;
+        width: 75px;
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    .navbar .shop{
+        display: flex ;
+        grid-row:  2/8;
+        justify-content: center;
+        align-items: end;
+        grid-row: 2/4;
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 50px 50px 50px;
+    }
+    .footer .todoslosderechos {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 12px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 10px;
+    }
+    
+    .footer .seguinos {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 12px;
+        grid-column: 3/4;
+        align-self: start;
+        margin: 20px;
+
+    }
+    
+    .footer .redes {
+        font-size: 25px;
+        color: white;
+        align-items: center;
+        grid-row: 2/3;
+        align-self: end;
+        margin-top: 20px;
+    }
+
+
+
+
+
+
+
+}
