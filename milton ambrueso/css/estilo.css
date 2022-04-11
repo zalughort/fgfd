@@ -16,8 +16,6 @@
 
 
 
-
-
 /*BODY----------------------------------------------------------------------------*/
 body {
     background-image: url('../background/r2\(1\).jpg');
@@ -34,7 +32,7 @@ h3 {
 
 /*FOOTER------------------------------------------------------------*/
 
-.footer {
+.footer2  {
     display: grid;
     background-color: rgb(5, 5, 5);
     grid-template-areas: "todoslosderechos  seguinos  redes";
@@ -43,22 +41,23 @@ h3 {
     margin-top: 30px;
 }
 
-.footer .todoslosderechos {
+.footer2  .todoslosderechos {
     grid-area: todoslosderechos;
     display: flex;
     justify-content: center;
-    color: white;
+    color: rgb(255, 253, 253);
+    font-size: small;
 
 }
 
-.footer .seguinos {
+.footer2 .seguinos {
     display: flex;
     justify-content: center;
     grid-area: seguinos;
     color: white;
 }
 
-.footer .redes {
+.footer2  .redes {
     display: flex;
     justify-content: space-evenly;
     grid-area: redes;
@@ -68,7 +67,7 @@ h3 {
 
 }
 
-.footer .link {
+.footer2 .link {
     color: aliceblue;
 
 }
@@ -144,7 +143,7 @@ h3 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin: auto;
+    margin: 10px;
 }
 
 .pcarmadas {
@@ -158,7 +157,8 @@ h3 {
 }
 
 .pcarmadas__img {
-    border-radius: 20px;
+    border-radius: 18px;
+    width: 245px;
 }
 
 .pcarmadas__texto {
@@ -338,7 +338,7 @@ margin: 10px;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin: auto;
+    margin: 20px;
     margin-top: 30px;
 }
 
@@ -355,7 +355,7 @@ margin: 10px;
 
 }
 
-.logo-img {
+.logo2-img {
     height: 80px;
     width: 100px;
     margin: 3px;
@@ -373,7 +373,7 @@ h1 {
 
 
 
-.navbar {
+.navbar2 {
     background-color: rgb(19, 20, 75);
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -382,14 +382,14 @@ h1 {
     padding: 10px;
 }
 
-.navbar .logo {
+.navbar2 .logo2 {
     height: 80px;
     width: 80px;
     grid-column: 1/2;
     grid-row: 1/3;
 }
 
-.navbar .menu {
+.navbar2 .menu2 {
     grid-column: 2/8;
     display: flex;
     justify-content: space-around;
@@ -398,7 +398,7 @@ h1 {
     grid-row: 3/3;
 }
 
-.navbar .todopc {
+.navbar2 .todopc2 {
     color: white;
     grid-column: 1/2;
     font-size: 15px;
@@ -406,11 +406,11 @@ h1 {
     grid-row: 3/5;
 }
 
-.navbar .menu-bar {
+.navbar2 .menu-bar {
     display: none
 }
 
-.navbar .shop {
+.navbar2 .shop {
     grid-column: 8/9;
     justify-items: end;
     margin-top: 50px;
@@ -419,20 +419,20 @@ h1 {
 
 }
 
-.navbar .menu li {
+.navbar2 .menu2 li {
     list-style: none;
     color: white;
     font-size: 20px;
 }
 
-.navbar .menu a {
+.navbar2 .menu2 a {
     color: rgb(245, 240, 240);
     cursor: pointer;
     text-decoration: none;
 }
 
 
-.navbar a:hover {
+.navbar2 a:hover {
     text-decoration: underline;
     color: aqua;
 }
@@ -443,13 +443,13 @@ h1 {
 
 @media (min-width:320px) and (max-width:600px){
 
-    .navbar .menu{
+    .navbar2 .menu{
         display: none;
     }
-    .navbar .shop{
+    .navbar2 .shop{
         display: none;
     }
-    .navbar .menu-bar {
+    .navbar2 .menu-bar {
         display: block;
         grid-column: 8/9;
         font-size: 30px;
@@ -459,12 +459,12 @@ h1 {
 
 
 
-    .footer{
+    .footer2 {
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: 50px 50px 50px;
     }
-    .footer .todoslosderechos {
+    .footer2 .todoslosderechos {
         display: flex;
         justify-content: center;
         color: white;
@@ -473,7 +473,7 @@ h1 {
         grid-row: 2/3;
     }
     
-    .footer .seguinos {
+    .footer2 .seguinos {
         display: flex;
         justify-content: center;
         color: white;
@@ -484,7 +484,7 @@ h1 {
 
     }
     
-    .footer .redes {
+    .footer2 .redes {
         font-size: 22px;
         color: white;
         align-items: center;
@@ -531,7 +531,7 @@ h1 {
 /*vista tableta*/
 
 @media (min-width:601px) and (max-width:800px){
-    .navbar .menu {
+    .navbar2 .menu2 {
         grid-column: 2/8;
         display: flex;
         justify-content: space-between;
@@ -539,13 +539,13 @@ h1 {
         align-items: end;
         grid-row: 2/4;
     }
-    .navbar .menu li {
+    .navbar2 .menu2 li {
         list-style: none;
         color: white;
         font-size: 15px;
         margin: 5px;
     } 
-    .navbar .todopc {
+    .navbar2 .todopc2 {
         color: white;
         grid-column: 1/2;
         font-size: 10px;
@@ -554,13 +554,13 @@ h1 {
         grid-row: 3/5;
         align-self: center;
     }
-    .navbar .logo {
+    .navbar2 .logo2 {
         height: 75px;
         width: 75px;
         grid-column: 1/2;
         grid-row: 1/3;
     }
-    .navbar .shop{
+    .navbar2 .shop{
         display: flex ;
         grid-row:  2/8;
         justify-content: center;
@@ -568,12 +568,12 @@ h1 {
         grid-row: 2/4;
     }
 
-    .footer{
+    .footer2{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: 50px 50px 50px;
     }
-    .footer .todoslosderechos {
+    .footer2 .todoslosderechos {
         display: flex;
         justify-content: center;
         color: white;
@@ -583,7 +583,7 @@ h1 {
         margin: 10px;
     }
     
-    .footer .seguinos {
+    .footer2 .seguinos {
         display: flex;
         justify-content: center;
         color: white;
@@ -594,7 +594,7 @@ h1 {
 
     }
     
-    .footer .redes {
+    .footer2 .redes {
         font-size: 25px;
         color: white;
         align-items: center;
