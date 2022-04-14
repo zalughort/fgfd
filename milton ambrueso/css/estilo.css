@@ -10,12 +10,6 @@
 
 
 
-
-
-
-
-
-
 /*BODY----------------------------------------------------------------------------*/
 body {
     background-image: url('../background/r2\(1\).jpg');
@@ -30,7 +24,7 @@ h3 {
 
 /*BODY--------------------------------------------------------------------------------*/
 
-/*FOOTER------------------------------------------------------------*/
+/*FOOTER ANTIGUO SIN USAR--------------------------------------------------------*/
 
 .footer2  {
     display: grid;
@@ -72,7 +66,7 @@ h3 {
 
 }
 
-/*FOOTER-----------------------------------------------------------------------------------*/
+/*FOOTER ANTIGUO SIN USAR---------------------------------------------------------------------------------*/
 
 
 
@@ -108,36 +102,11 @@ h3 {
     border-color: #a1a1a1;
 
 }
+/*productos-----------------------------------------*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*PC ARMADAS CAJAS COMP-------------------------------------------------------*/
+/*PC ARMADAS CAJAS COMP---------COMIENZO---------------------------------------------*/
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -151,41 +120,91 @@ h3 {
     height: 500px;
     border-style: groove;
     border-radius: 20px;
-    border-color: black;
     text-align: center;
     margin-top: 30px;
+    overflow:hidden ;
+    background:white;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+    display:grid;
+    align-items: end;
+
 }
+
+
 
 .pcarmadas__img {
     border-radius: 18px;
-    width: 245px;
+    width: 200px;
 }
 
 .pcarmadas__texto {
     font-family: 'poppins';
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 15px;
-    text-align: left;
+    text-align: center;
 margin: 10px;
+
+color: #8b8a8a;
 }
-
-/*PC ARMADAS COPM-------------------------------------------------------------------*/
-
 
 .botonv {
     display: inline-block;
-    padding: 12px 20px;
-    background: rgb(85, 82, 82);
+    padding: 4px 4px;
+    background: rgb(54, 236, 54);
     border-radius: 10px;
     color: aliceblue;
     align-items: center;
+    font-size: 14px;
 }
 
 
+.pcarmadas:hover {
+    
+
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+
+}
+
+.pcarmadas a{
+    display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+    
+}
+
+.pcarmadas a:hover{
+    background: #2fb4cc;
+	color: #fff;
+}
+
+
+    
 
 
 
-/*FORMULARIO---------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*PC ARMADAS COPM-----------------FINAL--------------------------------------------------*/
+
+
+
+
+
+
+/*FORMULARIO----------------------COMIENZO-----------------------------------------------------*/
 
 
 .form-register {
@@ -245,9 +264,9 @@ margin: 10px;
     font-size: 16px;
 }
 
-/*formulario--------------------------------------------------------------------------*/
+/*formulario---------------------FINAL-----------------------------------------------------*/
 
-/*PAGINA SERVICIOS------------------------------------------------------------------------*/
+/*PAGINA SERVICIOS------------------------COMIENZO------------------------------------------------*/
 .servicios-contenedor {
     justify-content: center;
     display: flex;
@@ -315,14 +334,8 @@ margin: 10px;
     src: url('../fonts/Roboto-Bold.ttf');
 }
 
-/*PAGINA SERVICIOS---------------------------------------------------------------------------*/
-.pcarmadas:hover {
-    transform: translateY(-15px);
-    box-shadow: #24303c;
-    border-style: groove;
-    border-color: #a1a1a1;
+/*PAGINA SERVICIOS--------------------------FINAL-------------------------------------------------*/
 
-}
 
 .productos {
     height: 400px;
@@ -371,7 +384,7 @@ h1 {
 
 
 
-
+/*------------NAVBAR ANTIGUO SIN USAR----------------COMIENZO------------------------*/
 
 .navbar2 {
     background-color: rgb(19, 20, 75);
@@ -437,7 +450,7 @@ h1 {
     color: aqua;
 }
 
-
+/*----------------NAVBAR ANTIGUO SIN USAR--------------FINAL----------------------------------*/
 
 /*vista movil media*/
 
