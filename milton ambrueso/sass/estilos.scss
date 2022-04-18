@@ -118,7 +118,6 @@
   .pcarmadas {
     width: 250px;
     height: 500px;
-    border-style: groove;
     border-radius: 20px;
     text-align: center;
     margin-top: 30px;
@@ -337,46 +336,87 @@
   /*PAGINA SERVICIOS--------------------------FINAL-------------------------------------------------*/
   
   /*productos del home------------------------------*/
+
+//variables 
+$color-borde: #a1a1a1;
+$hover-color: #2fb4cc;
+
+
+
   .productos {
     height: 400px;
     width: 200px;
-    border-style: groove;
-    border-radius: 5px;
+    border-radius: 20px;
     margin-top: 30px;
-    background-color: white;
+    background: white;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+    align-items: end;
+    display: grid;
+
+
+    &:hover {
+      transform: translateY(-15px);
+      box-shadow: #24303c;
+      border-color: $color-borde
+    
+    }
 
 
 
     img {
-        height: 50%;
+      width:190px ;
         border-radius: 5px;
       }
   
 p{
-    color:green
+    font-family: "poppins";
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+  margin: 10px;
+  color: #8b8a8a;
 }
+
+a {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
+  margin-bottom: 5px;
+}
+
+& a:hover {
+  background:$hover-color;
+  color: #fff;
+}
+
 
 
   }
   
+
+
+
+
+
   .productos-contenedor {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     margin: 20px;
-    margin-top: 30px;
+  
   }
   
 
-  
-  .productos:hover {
-    transform: translateY(-15px);
-    box-shadow: #24303c;
-    border-style: groove;
-    border-color: #a1a1a1;
-  
-  }
   
   
   /*productos del home final----------------------*/
@@ -389,7 +429,6 @@ p{
   h1 {
     color: #0d0d0e;
   }
-  
   
   
   
