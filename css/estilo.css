@@ -1,3 +1,81 @@
+.tarjeta, .partespcgamer {
+  height: 400px;
+  width: 200px;
+  border-radius: 20px;
+  margin-top: 30px;
+  background: white;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(243, 5, 5, 0.2);
+  transition: all 400ms ease-out;
+  cursor: default;
+}
+
+.img-tarjeta, .partespcgamer > img {
+  width: 190px;
+  border-radius: 5px;
+}
+
+.texto-tarjeta, .partespcgamer > p {
+  font-family: "poppins";
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+  margin: 10px;
+  color: #8b8a8a;
+}
+
+.atarjeta, .partespcgamer > a {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
+  margin-bottom: 5px;
+}
+
+/*cards servicios*/
+.tarjeta__armadopc, .tarjeta__reparaciondepc {
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+  margin-top: 30px;
+  background: white;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(243, 5, 5, 0.2);
+  transition: all 400ms ease-out;
+  cursor: default;
+  margin: 20px;
+}
+
+.tarjeta__img {
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.tarjeta__texto {
+  font-family: "poppins";
+  font-size: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  margin: 10px;
+  color: #8b8a8a;
+}
+
+.tarjeta__armadopc:hover, .tarjeta__reparaciondepc:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+  border-color: rgb(90, 221, 90);
+  border-style: groove;
+}
+
+/*mixin------------------------------------*/
+/*MAPAS---------------------------------*/
 @font-face {
   font-family: "poppins";
   src: url("../fonts/Poppins-Medium.ttf");
@@ -68,24 +146,13 @@ h3 {
   margin-top: 30px;
 }
 
-.partespcgamer {
-  height: 400px;
-  width: 200px;
-  border-style: groove;
-  border-radius: 5px;
-  margin-top: 30px;
+.partespcgamer a:hover {
+  color: white;
+  background-color: #2fb4cc;
 }
-
-.partespcgamer__img {
-  height: 50%;
-  border-radius: 5px;
-}
-
 .partespcgamer:hover {
-  transform: translateY(-15px);
-  box-shadow: #24303c;
-  border-style: groove;
-  border-color: #a1a1a1;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
 }
 
 /*productos-----------------------------------------*/
@@ -228,63 +295,10 @@ h3 {
   margin: auto;
 }
 
-.armadodepc {
-  border-radius: 10px;
-  height: 400px;
-  width: 400px;
-  text-align: center;
-  margin: 20px;
-}
-
-.armadodepc__img {
-  height: 200px;
-  width: 300px;
-  border-radius: 20px;
-}
-
-.armadodepc__texto {
+.titulo-servicios {
   font-family: "poppins";
-  font-size: 15px;
-}
-
-.reparaciondepc {
-  border-radius: 10px;
-  height: 400px;
-  width: 400px;
-  text-align: center;
-  margin: 20px;
-}
-
-.reparaciondepc__img {
-  height: 200px;
-  width: 300px;
-  border-radius: 20px;
-}
-
-.reparaciondepc__texto {
-  font-family: "poppins";
-  font-size: 15px;
-}
-
-.armadodepc:hover {
-  transform: translateY(-15px);
-  box-shadow: #24303c;
-  border-style: groove;
-  border-color: #a1a1a1;
-}
-
-.reparaciondepc:hover {
-  transform: translateY(-15px);
-  box-shadow: #24303c;
-  border-style: groove;
-  border-color: #a1a1a1;
-}
-
-#servicios-titulo {
-  color: rgb(14, 13, 13);
+  color: rgb(24, 22, 145);
   font-size: 40px;
-  font-family: "roboto";
-  src: url("../fonts/Roboto-Bold.ttf");
 }
 
 /*PAGINA SERVICIOS--------------------------FINAL-------------------------------------------------*/
